@@ -8,18 +8,25 @@ interface SoundButtonProps {
 }
 
 const SoundButton: React.FC<SoundButtonProps> = ({ label, soundSrc }) => {
-  const [audio] = useState(() => new Audio(soundSrc));
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   const playSound = () => {
-    audio.currentTime = 0; // Starta om ljudet om det redan spelas
-    audio.play();
+    if (audio) {
+      audio.pause(); // Stoppa eventuellt pågående ljud
+      audio.currentTime = 0; // Starta om ljudet från början
+    }
+
+    const newAudio = new Audio(soundSrc);
+    newAudio.play();
+    setAudio(newAudio);
   };
 
   return (
     <button
       onClick={playSound}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-all">
-      {label}
+      className="flex flex-col items-center justify-center w-32 h-32 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transition-all">
+      🔊
+      <span className="text-sm mt-2">{label}</span>
     </button>
   );
 };
