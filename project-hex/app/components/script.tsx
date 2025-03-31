@@ -55,31 +55,29 @@ const Script: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center bg-stone-900 p-6 pb-14 shadow-lg w-2/4 relative">
-      <h2 className="text-2xl font-bold mb-4">Manus</h2>
-
       <div className="text-2xl bg-stone-800 text-left p-4 bg-gray-700 w-full h-150 overflow-y-auto">
         {renderTextWithLineBreaks(scriptPages[currentPage])}
       </div>
 
-      <div className="flex gap-4 absolute top-170">
+      <div className="flex gap-4 absolute top-158">
         <button
           onClick={prevPage}
           disabled={currentPage === 0}
-          className={`px-4 py-2 rounded bg-blue-500 hover:bg-blue-700 text-white font-bold transition ${
+          className={`px-4 py-2  border-white border-1 bg-stone-900 hover:bg-stone-950 text-white font-bold transition ${
             currentPage === 0 ? "opacity-50 cursor-not-allowed" : ""
           }`}>
-          ⬅ Föregående
+          ⬅
         </button>
 
         <button
           onClick={nextPage}
           disabled={currentPage === scriptPages.length - 1}
-          className={`px-4 py-2 rounded bg-blue-500 hover:bg-blue-700 text-white font-bold transition ${
+          className={`px-4 py-2 border-white border-1 bg-stone-900 hover:bg-stone-950 text-white font-bold transition ${
             currentPage === scriptPages.length - 1
               ? "opacity-50 cursor-not-allowed"
               : ""
           }`}>
-          Nästa ➡
+          ➡
         </button>
       </div>
     </div>
