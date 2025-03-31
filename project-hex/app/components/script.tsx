@@ -54,14 +54,14 @@ const Script: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg w-3/4 relative">
+    <div className="flex flex-col items-center bg-stone-900 p-6 pb-14 shadow-lg w-2/4 relative">
       <h2 className="text-2xl font-bold mb-4">Manus</h2>
 
-      <div className="text-2xl text-gray-300 text-left p-4 bg-gray-700 rounded-lg w-full h-150 overflow-y-auto">
+      <div className="text-2xl bg-stone-800 text-left p-4 bg-gray-700 w-full h-150 overflow-y-auto">
         {renderTextWithLineBreaks(scriptPages[currentPage])}
       </div>
 
-      <div className="flex gap-4 absolute bottom-10">
+      <div className="flex gap-4 absolute top-170">
         <button
           onClick={prevPage}
           disabled={currentPage === 0}
