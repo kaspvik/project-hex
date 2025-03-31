@@ -24,7 +24,7 @@ const SoundButton: React.FC<SoundButtonProps> = ({ label, soundSrc }) => {
   return (
     <button
       onClick={playSound}
-      className="flex flex-col items-center justify-center w-32 h-32 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transition-all">
+      className="flex flex-col items-center justify-center w-22 h-22 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transition-all">
       🔊
       <span className="text-sm mt-2">{label}</span>
     </button>
