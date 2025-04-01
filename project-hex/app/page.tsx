@@ -6,9 +6,9 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-screen flex flex-row items-start justify-center bg-black-900 text-white p-12 gap-5">
+    <div className="min-h-screen min-w-full flex flex-row items-start justify-center bg-black text-white p-12 gap-5">
       {/* Ljudknapp-sektionen */}
-      <div className="flex flex-col items-center bg-stone-900/30 p-6 shadow-lg width-200px">
+      <section className="flex flex-col items-center bg-stone-900/30 p-6 shadow-lg w-auto">
         <div className="grid grid-cols-3 gap-4 mb-6">
           {soundData.map((sound, index) => (
             <SoundButton
@@ -20,10 +20,12 @@ export default function Home() {
           ))}
         </div>
         <MusicController />
-      </div>
+      </section>
 
       {/* Manus-sektionen */}
-      <Script />
+      <section>
+        <Script />
+      </section>
     </div>
   );
 }
