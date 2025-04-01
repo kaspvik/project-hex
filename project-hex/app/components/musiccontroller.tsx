@@ -4,8 +4,9 @@ import { useState } from "react";
 
 const HUE_BRIDGE_IP = "192.168.0.9";
 const HUE_API_KEY = "ppxtsTZYlLvVQYQRCFoCURWAPr3y4Zwml4buuGCt";
-const SCENE_ID_DAG = "d64HkvuifPFnM-cz";
+const SCENE_ID_DAG = "DBlnYRTI7dC635yd";
 const SCENE_ID_NATT = "zIcCc5aWFKU8ETQd";
+const SCENE_ID_DISKUSSION = "d64HkvuifPFnM-cz";
 const TRANSITION_TIME = 15; // 1.5 sekunder fade (Hue räknar i 100ms)
 
 const activateScene = async (sceneId: string) => {
@@ -60,7 +61,10 @@ const MusicController: React.FC = () => {
 
       {/* Diskussion-knapp */}
       <button
-        onClick={() => playMusic("/sounds/discussion.mp3")}
+        onClick={() => {
+          playMusic("/sounds/discussion.mp3");
+          activateScene(SCENE_ID_DISKUSSION);
+        }}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2  bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">💬</span>
         <span className="text-sm mt-2">Discussion</span>
