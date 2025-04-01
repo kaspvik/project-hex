@@ -54,8 +54,8 @@ const Script: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-stone-900 p-6 pb-14 shadow-lg w-2/4 relative">
-      <div className="text-2xl bg-stone-800 text-left p-4 bg-gray-700 w-full h-150 overflow-y-auto">
+    <div className="flex flex-col items-center bg-stone-900/30 p-6 pb-14 shadow-lg w-2/4 relative">
+      <div className="text-2xl bg-stone-900/80 text-left p-4 w-full h-150 overflow-y-auto">
         {renderTextWithLineBreaks(scriptPages[currentPage])}
       </div>
 
@@ -63,7 +63,7 @@ const Script: React.FC = () => {
         <button
           onClick={prevPage}
           disabled={currentPage === 0}
-          className={`px-4 py-2  border-white border-1 bg-stone-900 hover:bg-stone-950 text-white font-bold transition ${
+          className={`px-4 py-2  border-white border-1 bg-stone-900/30 hover:bg-stone-950 text-white font-bold transition ${
             currentPage === 0 ? "opacity-50 cursor-not-allowed" : ""
           }`}>
           ⬅
@@ -72,7 +72,7 @@ const Script: React.FC = () => {
         <button
           onClick={nextPage}
           disabled={currentPage === scriptPages.length - 1}
-          className={`px-4 py-2 border-white border-1 bg-stone-900 hover:bg-stone-950 text-white font-bold transition ${
+          className={`px-4 py-2 border-white border-1 bg-stone-900/30 hover:bg-stone-950 text-white font-bold transition ${
             currentPage === scriptPages.length - 1
               ? "opacity-50 cursor-not-allowed"
               : ""

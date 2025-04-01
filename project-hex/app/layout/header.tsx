@@ -1,6 +1,6 @@
 const Header: React.FC = () => {
   return (
-    <header className="bg-stone-900 p-4">
+    <header className="bg-stone-900/30 p-1">
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold">HEX</h1>
       </div>
