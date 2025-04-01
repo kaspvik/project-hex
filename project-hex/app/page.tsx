@@ -15,6 +15,7 @@ export default function Home() {
               key={index}
               label={sound.label}
               soundSrc={sound.soundSrc}
+              sceneId={sound.sceneId}
             />
           ))}
         </div>
