@@ -22,5 +22,26 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "Bonechiller";
+  src: url("/fonts/bonechiller.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-title {
+  font-family: "Bonechiller", sans-serif;
+}
+
+@font-face {
+  font-family: "Mistery";
+  src: url("/fonts/mistery-ilahi.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-text {
+  font-family: "Mistery", sans-serif;
 }

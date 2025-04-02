@@ -39,25 +39,25 @@ const MusicController: React.FC<{
         onClick={() => playMusic("/sounds/new-beginning.mp3", SCENE_ID_INTRO)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">🌄</span>
-        <span className="text-sm mt-2">Intro</span>
+        <span className="custom-title text-sm mt-2">Intro</span>
       </button>
       <button
         onClick={() => playMusic("/sounds/night-time.mp3", SCENE_ID_NATT)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">🌙</span>
-        <span className="text-sm mt-2">Night</span>
+        <span className="custom-title text-sm mt-2">Night</span>
       </button>
       <button
         onClick={() => playMusic("/sounds/new-dawn.mp3", SCENE_ID_DAG)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">☀️</span>
-        <span className="text-sm mt-2">Day</span>
+        <span className="custom-title text-sm mt-2">Day</span>
       </button>
       <button
         onClick={() => playMusic("/sounds/discussion.mp3", SCENE_ID_DISKUSSION)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">💬</span>
-        <span className="text-sm mt-2">Discussion</span>
+        <span className="custom-title text-sm mt-2">Discussion</span>
       </button>
       <button
         onClick={() =>
@@ -65,13 +65,13 @@ const MusicController: React.FC<{
         }
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">🗣️</span>
-        <span className="text-sm mt-2">Final judgement</span>
+        <span className="custom-title text-sm mt-2">Final judgement</span>
       </button>
       <button
         onClick={() => audio?.pause()}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <span className="text-4xl">⏹️</span>
-        <span className="text-sm mt-2">Stop</span>
+        <span className="custom-title text-sm mt-2">Stop</span>
       </button>
     </div>
   );
