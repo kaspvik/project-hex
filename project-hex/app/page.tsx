@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import MusicController from "./components/musiccontroller";
 import Script from "./components/script"; // ⬅ Importera manuskomponenten
 import SoundButton from "./components/soundbutton";
@@ -5,6 +8,8 @@ import { soundData } from "./data/sounds"; // Importera ljudspår
 import "./globals.css";
 
 export default function Home() {
+  const [lastScene, setLastScene] = useState("DBlnYRTI7dC635yd");
+
   return (
     <div className="min-h-screen min-w-full flex flex-row items-start justify-center bg-black text-white p-12 gap-5">
       {/* Ljudknapp-sektionen */}
@@ -16,10 +21,11 @@ export default function Home() {
               label={sound.label}
               soundSrc={sound.soundSrc}
               sceneId={sound.sceneId}
+              lastScene={lastScene}
             />
           ))}
         </div>
-        <MusicController />
+        <MusicController setLastScene={setLastScene} />
       </section>
 
       {/* Manus-sektionen */}

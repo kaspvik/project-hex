@@ -6,31 +6,30 @@ interface SoundButtonProps {
   label: string;
   soundSrc: string;
   sceneId: string;
+  lastScene: string; // Senaste huvudbelysning
 }
 
-const HUE_BRIDGE_IP = "192.168.0.9"; // Byt ut vid behov
-const HUE_API_KEY = "ppxtsTZYlLvVQYQRCFoCURWAPr3y4Zwml4buuGCt"; // Din API-nyckel
+const HUE_BRIDGE_IP = "192.168.0.9";
+const HUE_API_KEY = "ppxtsTZYlLvVQYQRCFoCURWAPr3y4Zwml4buuGCt";
 
 const SoundButton: React.FC<SoundButtonProps> = ({
   label,
   soundSrc,
   sceneId,
+  lastScene,
 }) => {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   const playSoundAndActivateScene = async () => {
-    // Stoppa eventuellt pågående ljud
     if (audio) {
       audio.pause();
       audio.currentTime = 0;
     }
 
-    // Spela upp ljudet
     const newAudio = new Audio(soundSrc);
     newAudio.play();
     setAudio(newAudio);
 
-    // Aktivera scenen på Hue-lamporna
     try {
       await fetch(
         `http://${HUE_BRIDGE_IP}/api/${HUE_API_KEY}/groups/0/action`,
@@ -40,6 +39,17 @@ const SoundButton: React.FC<SoundButtonProps> = ({
           headers: { "Content-Type": "application/json" },
         }
       );
+
+      newAudio.onended = async () => {
+        await fetch(
+          `http://${HUE_BRIDGE_IP}/api/${HUE_API_KEY}/groups/0/action`,
+          {
+            method: "PUT",
+            body: JSON.stringify({ scene: lastScene }),
+            headers: { "Content-Type": "application/json" },
+          }
+        );
+      };
     } catch (error) {
       console.error("Fel vid aktivering av scen:", error);
     }
