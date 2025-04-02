@@ -317,7 +317,11 @@ Nattens prövning kan nu påbörjas.`,
           className={`px-4 py-2  border-white border-1 bg-stone-900/30 hover:bg-stone-950 text-white font-bold transition ${
             currentPage === 0 ? "opacity-50 cursor-not-allowed" : ""
           }`}>
-          ⬅
+          <img
+            src="/svg/arrow-left.svg"
+            alt="Left arrow"
+            className="w-10 h-10"
+          />
         </button>
 
         <button
@@ -328,7 +332,11 @@ Nattens prövning kan nu påbörjas.`,
               ? "opacity-50 cursor-not-allowed"
               : ""
           }`}>
-          ➡
+          <img
+            src="/svg/arrow-right.svg"
+            alt="Right arrow"
+            className="w-10 h-10"
+          />
         </button>
       </div>
     </div>

@@ -38,25 +38,29 @@ const MusicController: React.FC<{
       <button
         onClick={() => playMusic("/sounds/new-beginning.mp3", SCENE_ID_INTRO)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
-        <span className="text-4xl">🌄</span>
+        <img src="/svg/intro.svg" alt="Intro Icon" className="w-10 h-10" />
         <span className="custom-title text-sm mt-2">Intro</span>
       </button>
       <button
         onClick={() => playMusic("/sounds/night-time.mp3", SCENE_ID_NATT)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
-        <span className="text-4xl">🌙</span>
+        <img src="/svg/night.svg" alt="Night Icon" className="w-10 h-10" />
         <span className="custom-title text-sm mt-2">Night</span>
       </button>
       <button
         onClick={() => playMusic("/sounds/new-dawn.mp3", SCENE_ID_DAG)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
-        <span className="text-4xl">☀️</span>
+        <img src="/svg/day.svg" alt="Day Icon" className="w-10 h-10" />
         <span className="custom-title text-sm mt-2">Day</span>
       </button>
       <button
         onClick={() => playMusic("/sounds/discussion.mp3", SCENE_ID_DISKUSSION)}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
-        <span className="text-4xl">💬</span>
+        <img
+          src="/svg/discussion.svg"
+          alt="Discussion Icon"
+          className="w-10 h-10"
+        />
         <span className="custom-title text-sm mt-2">Discussion</span>
       </button>
       <button
@@ -64,13 +68,17 @@ const MusicController: React.FC<{
           playMusic("/sounds/final-judgement.mp3", SCENE_ID_JUDGEMENT)
         }
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
-        <span className="text-4xl">🗣️</span>
+        <img
+          src="/svg/final-judgement.svg"
+          alt="Final Judgement Icon"
+          className="w-10 h-10"
+        />
         <span className="custom-title text-sm mt-2">Final judgement</span>
       </button>
       <button
         onClick={() => audio?.pause()}
         className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
-        <span className="text-4xl">⏹️</span>
+        <img src="/svg/stop.svg" alt="Stop Icon" className="w-10 h-10" />
         <span className="custom-title text-sm mt-2">Stop</span>
       </button>
     </div>
