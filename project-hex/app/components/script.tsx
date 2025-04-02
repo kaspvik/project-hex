@@ -69,66 +69,7 @@ Den sista blodmånens natt föll en förbannelse över skogen. Blommor svartnade
 Vem av dem har skändat deras namn? Vem har kallat på det som inte borde kallas? Och viktigast av allt… kommer de att finna förrädaren innan det är för sent?  
 
 Nattens prövning kan nu påbörjas.`,
-    `INLEDNING:
-Mörkret har sänkt sig över Salem. Klockorna i byn har slutat slå, liksom hjärtat på ännu en oskyldig själ. Någon bland oss har kallat på mörka krafter… och nu förgör de oss inifrån.
-Ni som står här är de sista överlevarna av ett systraskap en gång fylld av liv. Men svekets gift rinner i luften. Häxjägarna säger att det är vi som är de skyldiga, att vi alla är smittade av mörk magi… men jag säger er: någon ibland oss ljuger.`,
 
-    `INLEDNING: 
-Ni har redan valt en plats, och därmed har ni redan valt era öden. Ni har alla framför er ett kort. Som innehåller era krafter… och eran förbannelser. Men var försiktiga, att avslöja er sanna identitet är lika med en dödsdom.
-
-Innan ni öppnar era brev, hör följande:`,
-
-    `ROLLGENOMGÅNG:
-Varje själ här inne bär på en roll. Lyssna noga, för om natten faller och du inte vet vem du är… kommer du att bli det första offret.
-
-DE TROFASTA:
-Ni är de sista oskyldiga själarna i Salem. Ni har inga magiska krafter, bara er instinkt och ert förstånd. Ert mål är att överleva… och att finna de som bär ondskan inom sig.
-
-NATURENS HELARE:
-Du är skogens beskyddare, en vandrare mellan liv och död. Varje natt kan du hela en själ och skydda den från döden. Men var försiktig, om häxorna upptäcker vem du är, kommer de att söka ditt huvud först.
-
-TANKELÄSAREN:
-Du är den enda som ser genom lögner. Varje natt kan du blicka in i en själ och avslöja om den bär mörker inom sig, om den är en häxa. Men dina krafter är farliga… Häxorna kommer att göra allt för att tysta dig innan du finner sanningen.
-
-DEM FÖRRÄDISKA:
-Ni har brutit ederna och svikit ert systraskap. Ni har givit er själ till en mörkare kraft. Varje natt samlas ni i skuggorna och väljer ut en själ att förgöra. Ert mål är att förvrida sanningen och få dem trofasta att döda varandra… tills inget ljus finns kvar.`,
-
-    `REGLER:
-Spelet pågår i två faser: Natt och Dag.
-
-NATTEN:
-Alla blundar.
-Först vaknar Naturens Helare och väljer någon att beskydda.
-Sedan vaknar den onda Häxorna och pekar ut sitt offer.
-Därefter vaknar Tankeläsaren och pekar på någon. Spelledaren nickar om personen är ond eller skakar på huvudet om personen är oskyldig.
-
-DAGEN:
-Spelledaren berättar nattens händelser.
-Spelarna diskutera i några minuter för att lista ut vem som är en ond häxa.
-Därefter röstar vi på en person att brännas på bål. Den som får flest röster dör och avslöjar sin sanna identitet.
-Om det finns fler personer med samma antal röster, beskådas dem ifrån döden.
-Sedan faller natten på nytt.
-
-MÅLET:
-Dem goda vinner: 
-om alla häxor är brända.
-
-Häxorna vinner: 
-om de blir fler än dem goda.`,
-
-    `Och nu, mina vänner… är det dags att dra era kort. Salem håller andan. Mörkret viskar… Och om några minuter faller den första natten. Jag kommer att kalla på er`,
-
-    `Det var en gång sex systrar – bundna av blod och magi, födda i skogens djup där månens ljus dansade över rötterna. De var de sista av sin släkt, arvtagare till en uråldrig kunskap som förts vidare från mor till dotter, från natt till natt.  
-
-I åratal hade de svurit att stå enade, att skydda varandra och bevara balansen mellan liv och död, ljus och mörker. Men nu, denna natt, sitter de samlade i en cirkel av vaxljus och skuggor – för något har förändrats.  
-
-Några härinne har svikit systraskapet.  (Blixt)
-
-Den sista blodmånens natt föll en förbannelse över skogen. Blommor svartnade, djur flydde, och vinden bar med sig viskningar om ond magi. Några av dem har brutit eden, vandrat en stig av mörker och utövat krafter som inte hör hemma i deras krets. De ser på varandra över lågorna – blickar fyllda av tvivel, kärlek och skräck.  
-
-Vem av dem har skändat deras namn? Vem har kallat på det som inte borde kallas? Och viktigast av allt… kommer de att finna förrädaren innan det är för sent?  
-
-Nattens prövning kan nu påbörjas.`,
     `Första natten (mordfri): 
     
     Nu… faller nattens skuggor över Salem.
