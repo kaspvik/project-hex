@@ -60,7 +60,7 @@ const SoundButton: React.FC<SoundButtonProps> = ({
       onClick={playSoundAndActivateScene}
       className="flex flex-col items-center justify-center w-22 h-22 border-white border-1 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
       <img src="/svg/sound.svg" alt="Sound Icon" className="w-6 h-6" />
-      <span className="custom-title text-sm mt-2">{label}</span>
+      <span className="custom-title text-m mt-2">{label}</span>
     </button>
   );
 };
