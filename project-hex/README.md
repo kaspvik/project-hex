@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Interactive Music & Light Control
 
-## Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+This project is an interactive web application based on the game Maffia, that controls background music and lighting scenes at the sam time using React, TypeScript, and the Hue API. The application allows users to trigger different soundtracks and corresponding lighting effects, providing an immersive experience. Additionally, the project includes a script section and interactive elements for an enhanced user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Technologies Used
+
+- **React & TypeScript**: Frontend framework and strongly typed JavaScript.
+- **Tailwind**: Used for styling.
+- **Hue API**: Controls Philips Hue lighting scenes.
+
+## 📂 Project Structure
+
+```
+├── components
+│   ├── MusicController.tsx   # Handles music playback and lighting control
+│   ├── playerlist.tsx        # Showing the amount of players
+│   ├── Script.tsx            # Displays the interactive script
+│   ├── SoundButton.tsx       # Individual sound buttons with lighting integration
+│
+├── data
+│   ├── sounds.tx             # Contains sound-related data
+│   ├── music.tsx             # Contains music and scene mapping
+│
+│
+├── layout
+│   ├── header.tx             # Contains simple header layout with game title
+│
+│
+├── globals.css               # Global styles
+│── layout.tsx                #
+├── page.tsx                  # Main page integrating components
+│
+│
+├── public
+│   ├── fonts                 # Contains fonts
+│   ├── music                 # Contains music and scene mapping
+│   ├── sounds                # Contains sound-related data
+│   ├── svg                   # Contains symbols for buttons
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎶 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ **Dynamic Music Control**: Plays various background music tracks with corresponding scenes.
+✅ **Hue Light Scene Activation**: Triggers Hue API to match lighting with the selected track.
+✅ **Interactive Experience**: Users can interact with sound buttons and trigger different scenes.
+✅ **State Management**: React hooks are used to manage the last active scene.
+✅ **Responsive UI**: Styled with Tailwind CSS and designed to work on multiple devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 How to Run the Project
 
-## Learn More
+### 1️⃣ Clone the Repository
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+git clone https://github.com/kaspervik/project-hex.git
+cd project-hex
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2️⃣ Install Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+yarn install
+# or
+npm install
+```
 
-## Deploy on Vercel
+### 3️⃣ Run the Development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+yarn dev
+# or
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## ⚡ Environment Variables
+
+Create a `.env.local` file in the root directory and add:
+
+```env
+HUE_BRIDGE_IP=your-hue-bridge-ip
+HUE_API_KEY=your-api-key
+```
+
+## 🔮 Future Improvements
+
+- Implement **Redux** for better state management.
+- Enhance **animation effects** for UI interactions.
+- Add **customizable scenes** based on user preferences.
+- Improve **accessibility** and **SEO optimization**.
+
+## 📝 Author & Contributions
+
+Developed by **Kasper Vikström**. Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## 📜 License
+
+This project is open-source and licensed under the [MIT License](LICENSE).
