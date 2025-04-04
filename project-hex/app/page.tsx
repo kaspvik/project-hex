@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import MusicController from "./components/musiccontroller";
-import Script from "./components/script"; // ⬅ Importera manuskomponenten
+import PlayerList from "./components/playerlist";
+import Script from "./components/script";
 import SoundButton from "./components/soundbutton";
-import { soundData } from "./data/sounds"; // Importera ljudspår
+import { soundData } from "./data/sounds";
 import "./globals.css";
 
 export default function Home() {
@@ -31,6 +32,9 @@ export default function Home() {
       {/* Manus-sektionen */}
       <section>
         <Script />
+      </section>
+      <section>
+        <PlayerList />
       </section>
     </div>
   );
