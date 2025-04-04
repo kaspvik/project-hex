@@ -67,7 +67,7 @@ om de blir fler än dem goda.`,
 
     `Och nu, mina vänner… är det dags att dra era kort. Mörkret viskar… Och om några minuter faller den första natten. Jag kommer att kalla på er`,
 
-    `Det var en gång sex systrar – bundna av blod och magi, födda i skogens djup där månens ljus dansade över rötterna. De var de sista av sin släkt, arvtagare till en uråldrig kunskap som förts vidare från mor till dotter, från natt till natt.  
+    `Det var en gång ... systrar – bundna av blod och magi, födda i skogens djup där månens ljus dansade över rötterna. De var de sista av sin släkt, arvtagare till en uråldrig kunskap som förts vidare från mor till dotter, från natt till natt.  
 
 I åratal hade de svurit att stå enade, att skydda varandra och bevara balansen mellan liv och död, ljus och mörker. Men nu, denna natt, sitter de samlade i en cirkel av vaxljus och skuggor – för något har förändrats.  
 
@@ -305,7 +305,7 @@ Nattens prövning kan nu påbörjas.`,
   };
 
   return (
-    <div className="flex flex-col items-center bg-stone-900/30 p-6 pb-14 shadow-lg w-[600px] relative">
+    <div className="flex flex-col items-center bg-stone-900/50 p-6 pb-18 shadow-lg w-[600px] relative">
       <div className="custom-text text-4xl bg-stone-900/80 text-left p-4 w-full h-150 overflow-y-auto">
         {renderText(scriptPages[currentPage])}
       </div>

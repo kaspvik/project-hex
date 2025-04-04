@@ -38,12 +38,12 @@ const MusicController: React.FC<{
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 mt-6">
+    <div className="grid grid-cols-2 gap-4 mt-6 ">
       {musicData.map((music, index) => (
         <button
           key={index}
           onClick={() => playMusic(music.soundSrc, music.sceneId)}
-          className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
+          className="flex flex-col items-center justify-center w-28 h-28 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
           <img
             src={`/svg/${music.label.toLowerCase().replace(/\s+/g, "-")}.svg`}
             alt={`${music.label} Icon`}
@@ -54,7 +54,7 @@ const MusicController: React.FC<{
       ))}
       <button
         onClick={() => audio?.pause()}
-        className="flex flex-col items-center justify-center w-32 h-32 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
+        className="flex flex-col items-center justify-center w-28 h-28 border-white border-2 bg-stone-900 hover:bg-stone-950 text-white font-bold shadow-lg transition-all">
         <img src="/svg/stop.svg" alt="Stop Icon" className="w-10 h-10" />
         <span className="custom-title text-xl mt-2">Stop</span>
       </button>
