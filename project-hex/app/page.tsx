@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import MusicController from "./components/musiccontroller";
+import NightActions from "./components/nightactions";
 import PlayerList from "./components/playerlist";
 import Script from "./components/script";
 import SoundButton from "./components/soundbutton";
@@ -35,6 +36,7 @@ export default function Home() {
       </section>
       <section>
         <PlayerList />
+        <NightActions />
       </section>
     </div>
   );
