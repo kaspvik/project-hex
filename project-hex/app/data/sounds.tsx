@@ -25,11 +25,6 @@ export const soundData = [
     sceneId: "hSg2LUexfd0XirD8",
   },
   {
-    label: "Dead-witch",
-    soundSrc: "/sounds/dead-witch.mp3",
-    sceneId: "nl1Ripmw6w7QOP74",
-  },
-  {
     label: "Dead",
     soundSrc: "/sounds/someone-is-dead.mp3",
     sceneId: "nl1Ripmw6w7QOP74",

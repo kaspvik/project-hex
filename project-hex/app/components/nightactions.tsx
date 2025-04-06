@@ -8,7 +8,7 @@ const NightActions: React.FC = () => {
   const [spiesVision, setSpiesVision] = useState("");
 
   return (
-    <div className="mt-4">
+    <div className="p-4 bg-stone-900/50 rounded-lg w-80 mt-5">
       <div className="costum-title mb-4">
         <label className="block custom-title">Healers Protection:</label>
         <textarea

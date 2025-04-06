@@ -26,7 +26,7 @@ const PlayerList: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-stone-900/50 text-white rounded-lg w-80">
+    <div className="p-4 bg-stone-900/50 rounded-lg w-80">
       <h2 className="custom-title text-xl font-bold mb-4">Player List</h2>
       <div className="mb-4">
         <input
