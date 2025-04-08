@@ -11,7 +11,7 @@ const NightActions: React.FC = () => {
     <div className="p-4 bg-stone-900/50 rounded-lg w-80 mt-5">
       <div className="costum-title mb-4">
         <label className="block custom-title">Healers Protection:</label>
-        <textarea
+        <input
           onChange={(e) => setHealersProtection(e.target.value)}
           className="block custom-text text-2xl w-full h-12 p-2 border border-gray-300"
           placeholder="Skriv vem helaren skyddade..."
@@ -20,7 +20,7 @@ const NightActions: React.FC = () => {
 
       <div className="mb-4">
         <label className="block custom-title">Witches Choice:</label>
-        <textarea
+        <input
           value={witchesChoice}
           onChange={(e) => setWitchesChoice(e.target.value)}
           className="block custom-text text-2xl w-full h-12 p-2 border border-gray-300"
@@ -30,7 +30,7 @@ const NightActions: React.FC = () => {
 
       <div className="mb-4">
         <label className="block custom-title">Spies Vision:</label>
-        <textarea
+        <input
           value={spiesVision}
           onChange={(e) => setSpiesVision(e.target.value)}
           className="block custom-text text-2xl w-full h-12 p-2 border border-gray-300"

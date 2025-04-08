@@ -305,22 +305,22 @@ Nattens prövning kan nu påbörjas.`,
   };
 
   return (
-    <div className="flex flex-col items-center bg-stone-900/50 p-6 pb-18 shadow-lg w-[600px] relative">
-      <div className="custom-text text-4xl bg-stone-900/80 text-left p-4 w-full h-150 overflow-y-auto">
+    <div className="flex flex-col items-center bg-stone-900/50 p-6 pb-18 shadow-lg w-full max-w-[600px] relative">
+      <div className="custom-text text-3xl sm:text-3xl md:text-4xl bg-stone-900/80 text-left p-4 w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-y-auto">
         {renderText(scriptPages[currentPage])}
       </div>
 
-      <div className="flex gap-4 absolute top-158">
+      <div className="flex gap-4 absolute top-[340px] sm:top-[430px] md:top-[530px]">
         <button
           onClick={prevPage}
           disabled={currentPage === 0}
-          className={`px-4 py-2  border-white border-1 bg-stone-900/30 hover:bg-stone-950 text-white font-bold transition ${
+          className={`px-4 py-2 border-white border-1 bg-stone-900/30 hover:bg-stone-950 text-white font-bold transition ${
             currentPage === 0 ? "opacity-50 cursor-not-allowed" : ""
           }`}>
           <img
             src="/svg/arrow-left.svg"
             alt="Left arrow"
-            className="w-10 h-10"
+            className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
           />
         </button>
 
@@ -335,7 +335,7 @@ Nattens prövning kan nu påbörjas.`,
           <img
             src="/svg/arrow-right.svg"
             alt="Right arrow"
-            className="w-10 h-10"
+            className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
           />
         </button>
       </div>

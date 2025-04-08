@@ -26,7 +26,7 @@ const PlayerList: React.FC = () => {
   };
 
   return (
-    <div className="p-4 bg-stone-900/50 rounded-lg w-80">
+    <div className="p-4 bg-stone-900/50 w-85">
       <h2 className="custom-title text-xl font-bold mb-4">Player List</h2>
       <div className="mb-4">
         <input
@@ -45,7 +45,7 @@ const PlayerList: React.FC = () => {
         />
         <button
           onClick={addPlayer}
-          className=" custom-title bg-stone-900 hover:bg-stone-950 border-1 border-white px-3 py-2 s ">
+          className="custom-title bg-stone-900 hover:bg-stone-950 border-1 border-white px-3 py-2">
           Add
         </button>
       </div>
