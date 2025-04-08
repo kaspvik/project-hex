@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is an interactive web application based on the game Maffia, that controls background music and lighting scenes at the sam time using React, TypeScript, and the Hue API. The application allows users to trigger different soundtracks and corresponding lighting effects, providing an immersive experience. Additionally, the project includes a script section and interactive elements for an enhanced user experience.
+This project is an interactive web application based on the game Maffia, that controls background music and lighting scenes at the same time using React, TypeScript, and the Hue API. The application allows users to trigger different soundtracks and corresponding lighting effects, providing an immersive experience. Additionally, the project includes a script section and interactive elements for an enhanced user experience.
 
 ## 🛠️ Technologies Used
 
@@ -15,6 +15,7 @@ This project is an interactive web application based on the game Maffia, that co
 ```
 ├── components
 │   ├── MusicController.tsx   # Handles music playback and lighting control
+│   ├── nightactions.tsx      # Allow the game leader too take notes from the night
 │   ├── playerlist.tsx        # Showing the amount of players
 │   ├── Script.tsx            # Displays the interactive script
 │   ├── SoundButton.tsx       # Individual sound buttons with lighting integration
@@ -29,7 +30,7 @@ This project is an interactive web application based on the game Maffia, that co
 │
 │
 ├── globals.css               # Global styles
-│── layout.tsx                #
+│── layout.tsx                # Specific components that should be on each page
 ├── page.tsx                  # Main page integrating components
 │
 │
@@ -45,7 +46,7 @@ This project is an interactive web application based on the game Maffia, that co
 ✅ **Dynamic Music Control**: Plays various background music tracks with corresponding scenes.
 ✅ **Hue Light Scene Activation**: Triggers Hue API to match lighting with the selected track.
 ✅ **Interactive Experience**: Users can interact with sound buttons and trigger different scenes.
-✅ **State Management**: React hooks are used to manage the last active scene.
+✅ **State Management**: React hooks are used to manage the last active scene for the lights.
 ✅ **Responsive UI**: Styled with Tailwind CSS and designed to work on multiple devices.
 
 ## 🚀 How to Run the Project
@@ -94,7 +95,3 @@ HUE_API_KEY=your-api-key
 ## 📝 Author & Contributions
 
 Developed by **Kasper Vikström**. Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-## 📜 License
-
-This project is open-source and licensed under the [MIT License](LICENSE).
