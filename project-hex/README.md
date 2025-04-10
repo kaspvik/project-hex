@@ -61,16 +61,12 @@ cd project-hex
 ### 2️⃣ Install Dependencies
 
 ```sh
-yarn install
-# or
 npm install
 ```
 
 ### 3️⃣ Run the Development Server
 
 ```sh
-yarn dev
-# or
 npm run dev
 ```
 
@@ -87,7 +83,7 @@ HUE_API_KEY=your-api-key
 
 ## 🔮 Future Improvements
 
-- Implement **Redux** for better state management.
+- Implement **Players** directly in the script.
 - Enhance **animation effects** for UI interactions.
 - Add **customizable scenes** based on user preferences.
 - Improve **accessibility** and **SEO optimization**.
